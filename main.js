@@ -12,19 +12,15 @@ app.config(function($stateProvider, $urlRouterProvider) {
 app.controller('mainCtrl', function($scope) {
 
   console.log("mainCtrl");
-  $scope.lightsout = false; 
-  $scope.toggle = function(){
-    $scope.lightsout = !$scope.lightsout; 
-  }
-
-  $scope.hidedeets = true; 
-  $scope.toggledeets = function(){
-    $scope.hidedeets = !$scope.hidedeets; 
-  }
-
-  $scope.allprojects = false; 
-  $scope.toggleprojects = function(){
-    $scope.allprojects = !$scope.allprojects; 
+  $scope.myskills = []; 
+  
+  $scope.addskill = function(skill){
+    var index = $scope.myskills.indexOf(skill);
+    if ( index === -1) {
+      $scope.myskills.push(skill); 
+    } else {
+      
+    }
   }
   
 }); 

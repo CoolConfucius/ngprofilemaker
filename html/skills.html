@@ -1,35 +1,37 @@
 <div class="container">
   <h1>Skills</h1>
   <h2>My Skills:</h2>
-  <ul id="myskills"></ul>
+  <ul id="myskills">
+    <li ng-repeat="skill in myskills track by $index">{{skill}}</li>
+  </ul>
 
   <h2>Skills Bank:</h2>
   <ul id="skillsbank">
-    <li id="javascript"><button>JavaScript</button></li>
-    <li id="python"><button>Python</button></li>
-    <li id="java"><button>Java</button></li>
-    <li id="c"><button>C</button></li>
-    <li id="cplusplus"><button>C++</button></li>
-    <li id="html"><button>html</button></li>
-    <li id="css"><button>css</button></li>
-    <li id="bootstrap"><button>bootstrap</button></li>
-    <li id="jquery"><button>jquery</button></li>
-    <li id="angular"><button>angular</button></li>
-    <li id="react"><button>react</button></li>
-    <li id="ajax"><button>ajax</button></li>
-    <li id="jade"><button>jade</button></li>
-    <li id="nodejs"><button>nodejs</button></li>
-    <li id="express"><button>express</button></li>
-    <li id="mongodb"><button>mongodb</button></li>
-    <li id="mongoose"><button>mongoose</button></li>
-    <li id="sql"><button>sql</button></li>
-    <li id="git"><button>git</button></li>
-    <li id="unix"><button>unix</button></li>
-    <li id="scrum"><button>scrum</button></li>
-    <li id="gulp"><button>gulp</button></li>
-    <li id="bower"><button>bower</button></li>
-    <li id="tdd"><button>Test Driven Development</button></li>
-    <li id="ci"><button>Continuous Integration</button></li>
-    <li id="webpack"><button>webpack</button></li>
+    <li id="javascript"><button ng-click="addskill('JavaScript')">JavaScript</button></li>
+    <li id="python"><button ng-click="addskill('Python')">Python</button></li>
+    <li id="java"><button ng-click="addskill('Java')">Java</button></li>
+    <li id="c"><button ng-click="addskill('C')">C</button></li>
+    <li id="cplusplus"><button ng-click="addskill('C')">C++</button></li>
+    <li id="html"><button ng-click="addskill('html')">html</button></li>
+    <li id="css"><button ng-click="addskill('css')">css</button></li>
+    <li id="bootstrap"><button ng-click="addskill('bootstrap')">bootstrap</button></li>
+    <li id="jquery"><button ng-click="addskill('jquery')">jquery</button></li>
+    <li id="angular"><button ng-click="addskill('angular')">angular</button></li>
+    <li id="react"><button ng-click="addskill('react')">react</button></li>
+    <li id="ajax"><button ng-click="addskill('ajax')">ajax</button></li>
+    <li id="jade"><button ng-click="addskill('jade')">jade</button></li>
+    <li id="nodejs"><button ng-click="addskill('nodejs')">nodejs</button></li>
+    <li id="express"><button ng-click="addskill('express')">express</button></li>
+    <li id="mongodb"><button ng-click="addskill('mongodb')">mongodb</button></li>
+    <li id="mongoose"><button ng-click="addskill('mongoose')">mongoose</button></li>
+    <li id="sql"><button ng-click="addskill('sql')">sql</button></li>
+    <li id="git"><button ng-click="addskill('git')">git</button></li>
+    <li id="unix"><button ng-click="addskill('unix')">unix</button></li>
+    <li id="scrum"><button ng-click="addskill('scrum')">scrum</button></li>
+    <li id="gulp"><button ng-click="addskill('gulp')">gulp</button></li>
+    <li id="bower"><button ng-click="addskill('bower')">bower</button></li>
+    <li id="tdd"><button ng-click="addskill('Test Driven Development')">Test Driven Development</button></li>
+    <li id="ci"><button ng-click="addskill('Continuous Integration')">Continuous Integration</button></li>
+    <li id="webpack"><button ng-click="addskill('webpack')">webpack</button></li>
   </ul>
 </div>
